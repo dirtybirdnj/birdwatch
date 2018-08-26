@@ -20,6 +20,7 @@
     "url": "git+https://github.com/dirtybirdnj/birdwatch.git"
   },
   "dependencies": {
+    "blipp": "^3.0.0",
     "boom": "7.x.x",
     "guid": "0.0.12",
     "haute-couture": "3.x.x",

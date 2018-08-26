@@ -34,6 +34,10 @@ module.exports = new Confidence.Store({
                 }
             },
             {
+                plugin: 'blipp',
+                options: {}
+            },
+            {
                 plugin: 'schwifty',
                 options: {
                     $filter: 'NODE_ENV',
