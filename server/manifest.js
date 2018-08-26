@@ -51,7 +51,7 @@ module.exports = new Confidence.Store({
                                 idleTimeoutMillis: Infinity // Handles knex v0.12/0.13 misconfiguration when using sqlite3 (tgriesser/knex#1701)
                             },
                             connection: {
-                                filename: ':memory:'
+                                filename: 'birdwatch.db'
                             }
                         }
                     },

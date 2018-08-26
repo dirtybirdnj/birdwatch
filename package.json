@@ -12,6 +12,7 @@
   "scripts": {
     "knex": "knex",
     "start": "node server",
+    "dev": "nodemon server",
     "test": "lab -a code -I '__core-js_shared__' -L",
     "lint": "eslint ."
   },
@@ -27,7 +28,7 @@
     "joi": "13.x.x",
     "nodemon": "^1.18.3",
     "objection": "1.x.x",
-    "schwifty": "4.x.x",
+    "schwifty": "4.x.x"
   },
   "devDependencies": {
     "eslint-plugin-hapi": "4.x.x",
