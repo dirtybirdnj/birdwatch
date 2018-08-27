@@ -37,7 +37,7 @@
             {{#if droneList }}
 
             <h2>Active Drones {{droneCount}}</h2>
-            <twable class="table table-striped">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>id</th>
@@ -47,13 +47,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{#each droneList as drone}}
+                    {{#each droneList}}
                     <tr>
-                        <th scope="row">1</th>
-                        <td>{{drone.id}}</td>
-                        <td>{{drone.model}}</td>
-                        <td>{{drone.serial}}</td>
-                        <td>{{drone.created_at}}</td>
+                        <td><small>{{this.id}}</small></td>
+                        <td>{{this.model}}</td>
+                        <td>{{this.serial}}</td>
+                        <td>{{this.created_at}}</td>
                     </tr>
                     {{/each}}
 
