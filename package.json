@@ -16,7 +16,9 @@
     "test": "lab -a code -I '__core-js_shared__' -L",
     "build:css": "postcss lib/public/css/main.css -o lib/public/css/main.min.css --use cssnano --no-map",
     "build:js": "uglifyjs lib/public/js/main.js -o lib/public/js/main.min.js",
-    "build": "npm run build:css && npm run build:js"
+    "build": "npm run build:css && npm run build:js",
+    "db-wipe": "npm run knex -- migrate:rollback && npm run knex -- migrate:latest",
+    "db-seed": "npm run knex seed:run"
   },
   "repository": {
     "type": "git",
@@ -26,13 +28,14 @@
     "blipp": "^3.0.0",
     "boom": "7.x.x",
     "guid": "0.0.12",
+    "handlebars": "4.x.x",
     "haute-couture": "3.x.x",
+    "inert": "5.x.x",
     "joi": "13.x.x",
+    "moment": "^2.22.2",
     "nodemon": "^1.18.3",
     "objection": "1.x.x",
     "schwifty": "4.x.x",
-    "handlebars": "4.x.x",
-    "inert": "5.x.x",
     "vision": "5.x.x"
   },
   "devDependencies": {
