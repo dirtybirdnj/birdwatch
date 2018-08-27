@@ -78,6 +78,22 @@ describe('Drones', () => {
         expect(response.statusCode).to.equal(400);
     });
 
+    it('should provide a dashboard', async () => {
+
+        const server = await Server.deployment();
+
+        const response = await server.inject({
+            method: 'GET',
+            url: '/dashboard'
+        });
+
+        //Should throw a 400 because a unique constraint is violated by payload
+        expect(response.statusCode).to.equal(200);
+        expect(response.statusCode).to.be.a.string();
+    });
+
+
+
 
 
 });

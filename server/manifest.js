@@ -24,7 +24,9 @@ module.exports = new Confidence.Store({
         plugins: [
             {
                 plugin: '../lib', // Main plugin
-                options: {}
+                options: {
+                    developmentMode: (process.env.NODE_ENV !== 'production')
+                }
             },
             {
                 plugin: {
@@ -58,7 +60,6 @@ module.exports = new Confidence.Store({
                     production: {
                         migrateOnStart: false
                     }
-
                 }
             }
         ]
