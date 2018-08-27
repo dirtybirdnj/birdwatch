@@ -17,3 +17,8 @@ Production:
 
 Build:
 
+`docker build -t ${USERNAME}/birdwatch .`
+
+Run Docker Image:
+
+`docker run -p 8000:8080 -d ${USERNAME}/birdwatch`
