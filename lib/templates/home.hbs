@@ -27,11 +27,9 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
 
-            <br/>
-            {{#if droneList }}
-            <span class="badge badge-secondary float-right">Active Drones: {{droneCount}}</span>
-            {{/if}}            
+            <br/><p class="float-right">{{time}}</p> 
             <h1>Birdwatch</h1>
+            
 
             {{#if droneList }}
             <table class="table">
@@ -49,7 +47,7 @@
                 </thead>
                 <tbody>
                     {{#each droneList}}
-                    <tr>
+                    <tr{{#if this.idle}} class="table-warning"{{/if}}>
                         <td><small>{{this.id}}</small></td>
                         <td>{{this.model}}</td>
                         <td>{{this.serial}}</td>

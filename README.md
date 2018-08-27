@@ -5,12 +5,15 @@ Objective: Track a fleet of drones with a simple table display. Use as efficient
 Setup:
 
 1. `npm install`
-2. `npm run knex -- migrate:latest`
+2. `npm run db-recycle`
 
 Development:
 
 1. `npm run dev`
 
-Production
+Production:
 
 1. `npm start`
+
+Build:
+

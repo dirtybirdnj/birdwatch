@@ -89,7 +89,7 @@ describe('Drones', () => {
 
         //Should throw a 400 because a unique constraint is violated by payload
         expect(response.statusCode).to.equal(200);
-        expect(response.statusCode).to.be.a.string();
+        expect(response.payload).to.be.a.string();
     });
 
 
