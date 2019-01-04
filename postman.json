@@ -1,0 +1,145 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+			"name": "Populate Drones",
+			"folders": [
+				{
+					"order": [
+						"0b04df25-844d-466d-843a-1035ef86b920",
+						"b3cbd826-0d10-4fb6-8107-74a8cc4b4695",
+						"87379403-928d-43f0-88c0-802f4e089b58",
+						"99da4330-9cf8-4a0e-8d33-d7676a11d523"
+					],
+					"name": "Populate Drones",
+					"id": "d491081f-c7d8-46b2-b838-7d745df414b4",
+					"collection_name": "",
+					"collection_id": "",
+					"collection": "",
+					"owner": 0
+				}
+			],
+			"requests": [
+				{
+					"id": "f80b92b8-8d2d-4ee6-b72d-e23748bc73f3",
+					"url": "http://localhost:3000/dashboard",
+					"method": "GET",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "Dashboard",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": ""
+				},
+				{
+					"id": "0b04df25-844d-466d-843a-1035ef86b920",
+					"url": "http://localhost:3000/drones",
+					"method": "POST",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "Add a Drone",
+					"description": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded; charset=utf-8",
+					"dataMode": "raw",
+					"data": "DJI Mavic ProIDKFA",
+					"folder": "d491081f-c7d8-46b2-b838-7d745df414b4"
+				},
+				{
+					"id": "b3cbd826-0d10-4fb6-8107-74a8cc4b4695",
+					"url": "http://localhost:3000/drones",
+					"method": "POST",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "Add a Drone",
+					"description": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded; charset=utf-8",
+					"dataMode": "raw",
+					"data": "DJI Mavic ProIDDQD",
+					"folder": "d491081f-c7d8-46b2-b838-7d745df414b4"
+				},
+				{
+					"id": "87379403-928d-43f0-88c0-802f4e089b58",
+					"url": "http://localhost:3000/drones",
+					"method": "POST",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "Add a Drone",
+					"description": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded; charset=utf-8",
+					"dataMode": "raw",
+					"data": "DJI PhantomIBEHOLDR",
+					"folder": "d491081f-c7d8-46b2-b838-7d745df414b4"
+				},
+				{
+					"id": "99da4330-9cf8-4a0e-8d33-d7676a11d523",
+					"url": "http://localhost:3000/drones",
+					"method": "POST",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "Add a Drone",
+					"description": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded; charset=utf-8",
+					"dataMode": "raw",
+					"data": "Yuneec TyphoonIDBEHOLDL",
+					"folder": "d491081f-c7d8-46b2-b838-7d745df414b4"
+				},
+				{
+					"id": "90bafb06-1fdf-4030-8e01-fbff08dd5bc2",
+					"url": "http://localhost:3000/drones",
+					"method": "GET",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "List Drones",
+					"description": "",
+					"headers": "",
+					"dataMode": "raw",
+					"data": ""
+				},
+				{
+					"id": "3ca1db5e-013a-48f3-bcb8-bacb15e3bdd5",
+					"url": "http://localhost:3000/drones/technologies/update",
+					"method": "POST",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "Update Drone - Active",
+					"description": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded; charset=utf-8",
+					"dataMode": "raw",
+					"data": "1"
+				},
+				{
+					"id": "6a65ac71-5813-4cf7-af91-d64d81afb3e7",
+					"url": "http://localhost:3000/drones/channels/update",
+					"method": "POST",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "Update Drone - Flying",
+					"description": "",
+					"headers": "Content-Type: application/json; charset=utf-8",
+					"dataMode": "raw",
+					"data": "{\"heading\":\"NNW\",\"speed\":20,\"location\":\"-13.163068,-72.545128\"}"
+				},
+				{
+					"id": "392e0008-6f0f-4f85-a337-3a32b9b0a6d9",
+					"url": "http://localhost:3000/drones/OMGONOBROKEN/update",
+					"method": "POST",
+					"collectionId": "1ca91912-67a0-43ef-a79f-909e3ea08f87",
+					"name": "Update Drone BAD ID - Flying",
+					"description": "",
+					"headers": "Content-Type: application/json; charset=utf-8",
+					"dataMode": "raw",
+					"data": "{\"heading\":\"NNW\",\"speed\":20,\"location\":\"-13.163068,-72.545128\"}"
+				}
+			],
+			"order": [
+				"f80b92b8-8d2d-4ee6-b72d-e23748bc73f3",
+				"90bafb06-1fdf-4030-8e01-fbff08dd5bc2",
+				"3ca1db5e-013a-48f3-bcb8-bacb15e3bdd5",
+				"6a65ac71-5813-4cf7-af91-d64d81afb3e7",
+				"392e0008-6f0f-4f85-a337-3a32b9b0a6d9"
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "19610c02-8a11-43b5-a18c-857d75a34bef",
+			"name": "API-Flow Imports",
+			"values": [],
+			"timestamp": 1546572934404
+		}
+	]
+}
